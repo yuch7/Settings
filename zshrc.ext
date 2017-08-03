@@ -1,0 +1,1 @@
+PROMPT=%{$fg[cyan]%}%B%m%b\ %{$fg[yellow]%}%d%{$reset_color%}\ $(git_prompt_info)${ret_status}\ %{$reset_color%};export PROMPT

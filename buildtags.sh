@@ -1,0 +1,9 @@
+#!/bin/sh
+echo deleting tags and cscope ...
+rm -f ./tags
+rm -f ./cscope.out cscope.in.out cscope.po.out
+echo running ctags ...
+ctags -R --extra=f
+echo running cscope ...
+cscope -R -b -C -q
+echo Done
